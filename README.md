@@ -16,3 +16,4 @@ Cartão de visitas copiado do [repositório do Samuel](https://github.com/samuel
 - Figma
 - jQuery
 - Bootstrap
+- Ionicons
