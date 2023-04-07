@@ -1,43 +1,18 @@
-<h1 align="center"> DevLinks </h1>
+# Visit Card
 
-<p align="center">
-Evento exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnologias WEB.
-</p>
+Cartão de visitas copiado do [repositório do Samuel](https://github.com/samuelsoaresl/DevLinks), estilizado e adicionado recursos. O projeto publicado pode ser [acessado por aqui](https://gabrieszin.github.io/visit-card/)
 
-<p align="center">
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#memo-licença">Licença</a>
-</p>
+## Funções
 
-<p align="center">
-  <img alt="Previw do projeto DevLinks" src=".github/preview.jpg">
-</p>
+- Troca de tema
+- Registro de tema salvo no navegador
 
-<br>
+## Tecnologias utilizadas
 
-## 🚀 Tecnologias
-
-Esse projeto foi desenvolvido com as seguintes tecnologias:
-
-- HTML e CSS
-- JavaScript
-- Git e Github
+- HTML
+- CSS
+- JS
+- Git e GitHub
 - Figma
-
-## 💻 Projeto
-
-O DevLinks é um agregador de links para usar como cartão de visita online.
-
-## 🔖 Layout
-
-Você pode visualizar o layout do projeto através [DESSE LINK](https://www.figma.com/file/caEGXGrQ0t43MVi0mbl6d0/DevLinks-(Community)?node-id=0%3A1&t=0kk5rlDsSCnw34z7-0). É necessário ter conta no [Figma](https://figma.com) para acessá-lo.
-
-## :memo: Licença
-
-Esse projeto está sob a licença MIT.
-
----
-
-Feito com ♥ by Rocketseat :wave: [Participe da nossa comunidade!](https://discord.gg/rocketseat)
+- jQuery
+- Bootstrap
