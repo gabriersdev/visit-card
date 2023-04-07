@@ -6,6 +6,8 @@
 
 :root {
   --text-color: white;
+  --bckg-tooltip: white;
+  --text-tootlip: black;
   --bg-url: url(./assets/bg-mobile.jpg);
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.05);
@@ -16,6 +18,8 @@
 
 .light {
   --text-color: black;
+  --bckg-tooltip: black;
+  --text-tootlip: white;
   --bg-url: url(./assets/bg-mobile-light.jpg);
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0,  0.05);
@@ -36,8 +40,11 @@ body{
 
 body * {
   font-family: 'Inter', sans-serif;
-  color: var(--text-color);
   position: relative;
+}
+
+body, a{
+  color: var(--text-color) !important;
 }
 
 #container {
@@ -51,6 +58,10 @@ body * {
   padding: 0 24px;
 }
 
+.custom-tooltip {
+  --bs-tooltip-color: var(--text-tootlip);
+  --bs-tooltip-bg: var(--bckg-tooltip);
+}
 
 /* Profile */
 
