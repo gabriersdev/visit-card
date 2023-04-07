@@ -1,23 +1,41 @@
+const html = document.documentElement;
+
 (() => {
   $(function () {
     $('[data-toggle="tooltip"]').tooltip()
   })
+  
+  const theme = JSON.parse(localStorage.getItem('theme'));
+  
+  if(theme.page !== undefined){
+    switch (theme.page.toLowerCase().trim()) {
+      case 'night hydrated light':
+      html.classList.value = 'night hydrated light';
+      break;
+      
+      case 'night hydrated':
+      case 'null':
+      default:
+      html.classList.value = 'night hydrated';
+      break;
+    }
+  }else{
+    saveTheme();
+  }
+  
+  saveTheme();
 })();
 
 function toggleMode() {
-  const html = document.documentElement
-  html.classList.toggle("light")
-  
-  //pegar a tag img
-  // const img = document.querySelector("#profile img")
-  
-  // //substituir a imagem 
-  // if(html.classList.contains('light')) {
-  //   //se estiver light mode, addicionar a imagem light
-  //   img.setAttribute('src', '/.assets/avatar-light.jng')
-  // }else{
-  //     //se estiver sem light mode, manter imagem normal
-  //   img.setAttribute('src', '/.assets/avatar.jng')
-  // }
-  
+  html.classList.toggle("light");
+  saveTheme();
+}
+
+function saveTheme(){
+  try{
+    const theme = { page: html.classList.value };
+    localStorage.setItem('theme', JSON.stringify(theme));
+  }catch(error){
+    console.log(error);
+  }
 }
