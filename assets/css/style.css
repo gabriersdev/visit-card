@@ -134,6 +134,8 @@ ul{
   flex-direction: column;
   gap: 14px;
   padding-top: 24px;
+  margin: 0;
+  padding-left: 0;
 }
 
 ul li a {

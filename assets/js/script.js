@@ -6,27 +6,31 @@ const html = document.documentElement;
       window.location.reload();
     })
   })
-
+  
   $(function () {
     $('[data-toggle="tooltip"]').tooltip()
   })
   
   const theme = JSON.parse(localStorage.getItem('theme'));
   
-  if(theme.page !== undefined){
-    switch (theme.page.toLowerCase().trim()) {
-      case 'night hydrated light':
-      html.classList.value = 'night hydrated light';
-      break;
-      
-      case 'night hydrated':
-      case 'null':
-      default:
-      html.classList.value = 'night hydrated';
-      break;
+  try{
+    if (theme.page !== undefined) {
+      switch (theme.page.toLowerCase().trim()) {
+        case 'night hydrated light':
+        html.classList.value = 'night hydrated light';
+        break;
+        
+        case 'night hydrated':
+        case 'null':
+        default:
+        html.classList.value = 'night hydrated';
+        break;
+      }
+    } else {
+      saveTheme();
     }
-  }else{
-    saveTheme();
+  }catch(error){
+    //
   }
   
   saveTheme();
