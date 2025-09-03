@@ -28,12 +28,14 @@
   <script src="./assets/js/frameworks/jquery.js"></script>
   <script src="./assets/js/frameworks/bootstrap.js"></script>
 </head>
-<body>
+<body class="user-select-none">
   <div id="container">
-    <div id="profile">
-      <img src="./assets/img/avatar.png" alt="Foto do Gabriel">
-      <p><b>Gabriel Ribeiro</b></p>
-    </div>
+    <a class="text-decoration-none user-select-none" href="https://gabriel.lts.app.br" target="_blank">
+      <div id="profile">
+        <img src="./assets/img/avatar.png" alt="Foto do Gabriel">
+        <p><b>Gabriel Ribeiro</b></p>
+      </div>
+    </a>
     
     <div id="switch" onclick="toggleMode()">
       <button></button>
@@ -41,6 +43,10 @@
     </div>
     
     <ul>
+      <li>
+        <a href="https://github.com/gabriersdev?tab=repositories"><b>Meus projetos</b></a>
+      </li>
+      
       <li>
         <a href="https://gabriel.lts.app.br">Meu portfólio&nbsp;<b>en-us</b></a>
       </li>
@@ -50,13 +56,13 @@
       </li>
       
       <li>
-        <a href="https://www.behance.net/gabrielmpribeiro" target="_blank">Eu na Behance</a>
+        <a href="https://lts.app.br" target="_blank">Lotus Media</a>
       </li>
       
       <li>
         <a href="mailto:gabriel@lts.app.br" target="_blank">
           <div style="text-align: center;">
-            <span>Me mande um e-mail</span><br>
+            <span class="fw-normal">Precisa falar comigo? Me envie um e-mail</span><br>
             <span class="fw-semibold d-flex align-items-center justify-content-center">
               gabriel
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-at" viewBox="0 0 16 16">
